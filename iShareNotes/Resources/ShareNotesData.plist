@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Feeds</key>
+	<array>
+		<dict>
+			<key>feedText</key>
+			<string>This is a sample text</string>
+			<key>feedImage</key>
+			<string>sample.png</string>
+		</dict>
+		<dict>
+			<key>feedText</key>
+			<string>This is a sample text</string>
+			<key>feedImage</key>
+			<string>sample.png</string>
+		</dict>
+		<dict>
+			<key>feedText</key>
+			<string>This is a sample text</string>
+			<key>feedImage</key>
+			<string>sample.png</string>
+		</dict>
+		<dict>
+			<key>feedText</key>
+			<string>This is a sample text</string>
+			<key>feedImage</key>
+			<string>sample.png</string>
+		</dict>
+		<dict>
+			<key>feedText</key>
+			<string>This is a sample text</string>
+			<key>feedImage</key>
+			<string>sample.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>
