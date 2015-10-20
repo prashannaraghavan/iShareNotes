@@ -7,16 +7,21 @@
 //
 
 #import "NotesViewController.h"
+#import "NotesForClassesTableViewCell.h"
 #import "Utils.h"
 
-#define kNotesTableViewCellIdentifier @"NotesTableViewCell"
+#define kNotesCellIdentifier @"NotesTableViewCell"
+#define kNotesForClassCellIdentifier @"NotesForClassCell"
 
+#define kFeedsArrayKey @"Feeds"
 #define kNotesArrayKey @"Notes"
 
 @interface NotesViewController ()
 {
     NSArray *notesArray;
+    NSArray *feedArray;
 }
+@property (weak, nonatomic) IBOutlet UITableView *notesTableView;
 @end
 
 @implementation NotesViewController
@@ -25,6 +30,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     notesArray = [Utils returnDictionaryFromPlistForKey:kNotesArrayKey];
+    feedArray = [Utils returnDictionaryFromPlistForKey:kFeedsArrayKey];
+    self.notesTableView.estimatedRowHeight = UITableViewAutomaticDimension;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +53,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 10.0;
+    return 45.0;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -56,7 +63,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return feedArray.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -64,12 +71,25 @@
     return notesArray.count;
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSDictionary *notesDict = [notesArray objectAtIndex:section];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesCellIdentifier];
+    cell.textLabel.text = notesDict[@"courseTitle"];
+    return cell.contentView;
+}
+
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *notesDict = [notesArray objectAtIndex:indexPath.section];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesTableViewCellIdentifier];
-    cell.textLabel.text = notesDict[@"courseTitle"];
+    NSDictionary *feed = [feedArray objectAtIndex:indexPath.row];
+    NotesForClassesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesForClassCellIdentifier];
+    cell.noteLabel.text = feed[@"feedText"];
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100.0;
 }
 
 @end
