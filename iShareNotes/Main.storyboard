@@ -152,7 +152,7 @@
             </objects>
             <point key="canvasLocation" x="421" y="295"/>
         </scene>
-        <!--Feed-->
+        <!--Feeds-->
         <scene sceneID="Fyp-Wi-lbS">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Wqz-Hv-hHH" customClass="FeedsViewController" sceneMemberID="viewController">
@@ -278,7 +278,7 @@
                             <constraint firstItem="okg-YL-heh" firstAttribute="top" secondItem="dns-CY-YKF" secondAttribute="bottom" id="tct-zw-Kl2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Feed" id="gi4-NI-Nhe"/>
+                    <navigationItem key="navigationItem" title="Feeds" id="gi4-NI-Nhe"/>
                     <connections>
                         <outlet property="feedsTableview" destination="dns-CY-YKF" id="sKM-KY-Qpl"/>
                     </connections>
@@ -459,7 +459,7 @@
         <!--Classes-->
         <scene sceneID="uOo-po-XJA">
             <objects>
-                <viewController id="jZV-h1-8T6" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jZV-h1-8T6" customClass="ClassesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kHx-KW-Qz2"/>
                         <viewControllerLayoutGuide type="bottom" id="cLv-ED-KQh"/>
@@ -467,8 +467,38 @@
                     <view key="view" contentMode="scaleToFill" id="3G3-hP-qN1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-PD-igA">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClassesTableViewCell" id="sIk-0S-QhP">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sIk-0S-QhP" id="IVt-ZN-Tjx">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jZV-h1-8T6" id="M8H-3M-i91"/>
+                                    <outlet property="delegate" destination="jZV-h1-8T6" id="aFb-Wp-EzB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jDY-PD-igA" firstAttribute="leading" secondItem="3G3-hP-qN1" secondAttribute="leading" id="7WV-Ry-mJa"/>
+                            <constraint firstAttribute="trailing" secondItem="jDY-PD-igA" secondAttribute="trailing" id="JTD-Ki-QQf"/>
+                            <constraint firstItem="cLv-ED-KQh" firstAttribute="top" secondItem="jDY-PD-igA" secondAttribute="bottom" id="LuR-aI-dw2"/>
+                            <constraint firstItem="jDY-PD-igA" firstAttribute="top" secondItem="kHx-KW-Qz2" secondAttribute="bottom" id="Q4R-Qm-YFe"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Classes" id="Yal-xw-rF4"/>
                 </viewController>
@@ -519,7 +549,7 @@
         <!--Notes-->
         <scene sceneID="cJw-DN-dTe">
             <objects>
-                <viewController id="Rfz-fb-iPG" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Rfz-fb-iPG" customClass="NotesViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rZ4-mP-Xj8"/>
                         <viewControllerLayoutGuide type="bottom" id="rlU-KU-VLr"/>
@@ -527,8 +557,37 @@
                     <view key="view" contentMode="scaleToFill" id="ssO-hM-AWZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="NEu-78-eVY">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotesTableViewCell" id="oi8-6L-ib5">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oi8-6L-ib5" id="s9s-pa-mJw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Rfz-fb-iPG" id="co5-K5-N5o"/>
+                                    <outlet property="delegate" destination="Rfz-fb-iPG" id="XxM-6a-p4F"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NEu-78-eVY" firstAttribute="leading" secondItem="ssO-hM-AWZ" secondAttribute="leading" id="HgU-Lt-hsp"/>
+                            <constraint firstItem="rlU-KU-VLr" firstAttribute="top" secondItem="NEu-78-eVY" secondAttribute="bottom" id="Mai-qf-MOs"/>
+                            <constraint firstItem="NEu-78-eVY" firstAttribute="top" secondItem="rZ4-mP-Xj8" secondAttribute="bottom" id="Rmg-d2-wJm"/>
+                            <constraint firstAttribute="trailing" secondItem="NEu-78-eVY" secondAttribute="trailing" id="gZl-nJ-JtF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="j1z-KD-IBA"/>
                 </viewController>

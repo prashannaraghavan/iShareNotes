@@ -2,6 +2,48 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Classes</key>
+	<array>
+		<dict>
+			<key>courseTitle</key>
+			<string>Principles of Programming Languages</string>
+			<key>courseCode</key>
+			<string>CSE 340</string>
+		</dict>
+		<dict>
+			<key>courseTitle</key>
+			<string>Mobile Computing</string>
+			<key>courseCode</key>
+			<string>CSE 535</string>
+		</dict>
+		<dict>
+			<key>courseTitle</key>
+			<string>Distributed Database System</string>
+			<key>courseCode</key>
+			<string>CSE 512</string>
+		</dict>
+	</array>
+	<key>Notes</key>
+	<array>
+		<dict>
+			<key>courseTitle</key>
+			<string>Principles of Programming Languages</string>
+			<key>courseCode</key>
+			<string>CSE 340</string>
+		</dict>
+		<dict>
+			<key>courseTitle</key>
+			<string>Mobile Computing</string>
+			<key>courseCode</key>
+			<string>CSE 535</string>
+		</dict>
+		<dict>
+			<key>courseTitle</key>
+			<string>Distributed Database System</string>
+			<key>courseCode</key>
+			<string>CSE 512</string>
+		</dict>
+	</array>
 	<key>Feeds</key>
 	<array>
 		<dict>

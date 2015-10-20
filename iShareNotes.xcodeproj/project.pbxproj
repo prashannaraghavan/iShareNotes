@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2490DBDF1BD633B900AFE404 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490DBDE1BD633B900AFE404 /* NotesViewController.m */; };
+		2490DBE21BD633D500AFE404 /* ClassesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490DBE11BD633D500AFE404 /* ClassesViewController.m */; };
+		2490DBE61BD6361C00AFE404 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2490DBE51BD6361C00AFE404 /* Utils.m */; };
 		24D98B711BD61FC200EE79EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B701BD61FC200EE79EA /* main.m */; };
 		24D98B741BD61FC200EE79EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B731BD61FC200EE79EA /* AppDelegate.m */; };
 		24D98B771BD61FC200EE79EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B761BD61FC200EE79EA /* ViewController.m */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2490DBDD1BD633B900AFE404 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotesViewController.h; path = Notes/NotesViewController.h; sourceTree = "<group>"; };
+		2490DBDE1BD633B900AFE404 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NotesViewController.m; path = Notes/NotesViewController.m; sourceTree = "<group>"; };
+		2490DBE01BD633D500AFE404 /* ClassesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassesViewController.h; path = Classes/ClassesViewController.h; sourceTree = "<group>"; };
+		2490DBE11BD633D500AFE404 /* ClassesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassesViewController.m; path = Classes/ClassesViewController.m; sourceTree = "<group>"; };
+		2490DBE41BD6361C00AFE404 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Utils/Utils.h; sourceTree = "<group>"; };
+		2490DBE51BD6361C00AFE404 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Utils/Utils.m; sourceTree = "<group>"; };
 		24D98B6C1BD61FC200EE79EA /* iShareNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShareNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D98B701BD61FC200EE79EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24D98B721BD61FC200EE79EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +97,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2490DBDB1BD6336E00AFE404 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2490DBE01BD633D500AFE404 /* ClassesViewController.h */,
+				2490DBE11BD633D500AFE404 /* ClassesViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2490DBDC1BD6337700AFE404 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				2490DBDD1BD633B900AFE404 /* NotesViewController.h */,
+				2490DBDE1BD633B900AFE404 /* NotesViewController.m */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		2490DBE31BD635F100AFE404 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2490DBE41BD6361C00AFE404 /* Utils.h */,
+				2490DBE51BD6361C00AFE404 /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		24D98B631BD61FC200EE79EA = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +147,7 @@
 		24D98B6E1BD61FC200EE79EA /* iShareNotes */ = {
 			isa = PBXGroup;
 			children = (
+				2490DBE31BD635F100AFE404 /* Utils */,
 				24D98BAA1BD6213C00EE79EA /* Resources */,
 				24D98BB01BD6213C00EE79EA /* ViewController */,
 				24D98B721BD61FC200EE79EA /* AppDelegate.h */,
@@ -176,6 +213,8 @@
 		24D98BB01BD6213C00EE79EA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2490DBDC1BD6337700AFE404 /* Notes */,
+				2490DBDB1BD6336E00AFE404 /* Classes */,
 				24D98BAF1BD6213C00EE79EA /* Feed */,
 			);
 			path = ViewController;
@@ -312,12 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2490DBE61BD6361C00AFE404 /* Utils.m in Sources */,
 				24D98BB41BD6257F00EE79EA /* FeedsViewController.m in Sources */,
 				24D98BB51BD6257F00EE79EA /* FeedsTableViewCell.m in Sources */,
 				24D98B771BD61FC200EE79EA /* ViewController.m in Sources */,
 				24D98B7D1BD61FC200EE79EA /* iShareNotes.xcdatamodeld in Sources */,
+				2490DBDF1BD633B900AFE404 /* NotesViewController.m in Sources */,
 				24D98B741BD61FC200EE79EA /* AppDelegate.m in Sources */,
 				24D98B711BD61FC200EE79EA /* main.m in Sources */,
+				2490DBE21BD633D500AFE404 /* ClassesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

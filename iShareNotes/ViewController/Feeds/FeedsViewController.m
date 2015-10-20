@@ -8,9 +8,9 @@
 
 #import "FeedsViewController.h"
 #import "FeedsTableViewCell.h"
+#import "Utils.h"
 
 #define kFeedsCell @"feedTableviewCell"
-#define kFeedsDataPlist @"ShareNotesData"
 #define kFeedsArrayKey @"Feeds"
 
 @interface FeedsViewController ()
@@ -26,11 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:
-                      kFeedsDataPlist ofType:@"plist"];
-    // Build the array from the plist
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    feedArray = [dict valueForKey:kFeedsArrayKey];
+    feedArray = [Utils returnDictionaryFromPlistForKey:kFeedsArrayKey];
 }
 
 - (void)didReceiveMemoryWarning {
