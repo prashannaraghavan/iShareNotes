@@ -48,6 +48,8 @@
 }
 */
 
+#pragma mark - UITableview delegates
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return feedArray.count;
@@ -68,6 +70,38 @@
     cell.feedsImageView.image = [UIImage imageNamed:feed[@"feedImage"]];
     
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10.0;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 1.0;
+}
+
+#pragma mark - UITextField delegates
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return YES;
+}
+
+-(BOOL)textFieldShouldClear:(UITextField *)textField
+{
+    return YES;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    
 }
 
 @end
