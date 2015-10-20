@@ -10,12 +10,15 @@
 		24D98B711BD61FC200EE79EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B701BD61FC200EE79EA /* main.m */; };
 		24D98B741BD61FC200EE79EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B731BD61FC200EE79EA /* AppDelegate.m */; };
 		24D98B771BD61FC200EE79EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B761BD61FC200EE79EA /* ViewController.m */; };
-		24D98B7A1BD61FC200EE79EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D98B781BD61FC200EE79EA /* Main.storyboard */; };
 		24D98B7D1BD61FC200EE79EA /* iShareNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B7B1BD61FC200EE79EA /* iShareNotes.xcdatamodeld */; };
-		24D98B7F1BD61FC200EE79EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D98B7E1BD61FC200EE79EA /* Assets.xcassets */; };
 		24D98B821BD61FC200EE79EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D98B801BD61FC200EE79EA /* LaunchScreen.storyboard */; };
 		24D98B8D1BD61FC200EE79EA /* iShareNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B8C1BD61FC200EE79EA /* iShareNotesTests.m */; };
 		24D98B981BD61FC200EE79EA /* iShareNotesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98B971BD61FC200EE79EA /* iShareNotesUITests.m */; };
+		24D98BA61BD620F200EE79EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D98BA51BD620F200EE79EA /* Main.storyboard */; };
+		24D98BA81BD6210400EE79EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D98BA71BD6210400EE79EA /* Assets.xcassets */; };
+		24D98BB11BD6213D00EE79EA /* ShareNotesData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24D98BA91BD6213C00EE79EA /* ShareNotesData.plist */; };
+		24D98BB21BD6213D00EE79EA /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98BAC1BD6213C00EE79EA /* FeedsViewController.m */; };
+		24D98BB31BD6213D00EE79EA /* FeedsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D98BAE1BD6213C00EE79EA /* FeedsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +45,7 @@
 		24D98B731BD61FC200EE79EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		24D98B751BD61FC200EE79EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		24D98B761BD61FC200EE79EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		24D98B791BD61FC200EE79EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D98B7C1BD61FC200EE79EA /* iShareNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iShareNotes.xcdatamodel; sourceTree = "<group>"; };
-		24D98B7E1BD61FC200EE79EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D98B811BD61FC200EE79EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D98B831BD61FC200EE79EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D98B881BD61FC200EE79EA /* iShareNotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShareNotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +54,13 @@
 		24D98B931BD61FC200EE79EA /* iShareNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShareNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D98B971BD61FC200EE79EA /* iShareNotesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iShareNotesUITests.m; sourceTree = "<group>"; };
 		24D98B991BD61FC200EE79EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24D98BA51BD620F200EE79EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		24D98BA71BD6210400EE79EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24D98BA91BD6213C00EE79EA /* ShareNotesData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ShareNotesData.plist; path = Resources/ShareNotesData.plist; sourceTree = "<group>"; };
+		24D98BAB1BD6213C00EE79EA /* FeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsViewController.h; path = ViewController/Feeds/FeedsViewController.h; sourceTree = "<group>"; };
+		24D98BAC1BD6213C00EE79EA /* FeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsViewController.m; path = ViewController/Feeds/FeedsViewController.m; sourceTree = "<group>"; };
+		24D98BAD1BD6213C00EE79EA /* FeedsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsTableViewCell.h; path = ViewController/Feeds/FeedsTableViewCell.h; sourceTree = "<group>"; };
+		24D98BAE1BD6213C00EE79EA /* FeedsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsTableViewCell.m; path = ViewController/Feeds/FeedsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +111,15 @@
 		24D98B6E1BD61FC200EE79EA /* iShareNotes */ = {
 			isa = PBXGroup;
 			children = (
+				24D98BAA1BD6213C00EE79EA /* Resources */,
+				24D98BB01BD6213C00EE79EA /* ViewController */,
 				24D98B721BD61FC200EE79EA /* AppDelegate.h */,
 				24D98B731BD61FC200EE79EA /* AppDelegate.m */,
 				24D98B751BD61FC200EE79EA /* ViewController.h */,
 				24D98B761BD61FC200EE79EA /* ViewController.m */,
-				24D98B781BD61FC200EE79EA /* Main.storyboard */,
-				24D98B7E1BD61FC200EE79EA /* Assets.xcassets */,
 				24D98B801BD61FC200EE79EA /* LaunchScreen.storyboard */,
+				24D98BA51BD620F200EE79EA /* Main.storyboard */,
+				24D98BA71BD6210400EE79EA /* Assets.xcassets */,
 				24D98B831BD61FC200EE79EA /* Info.plist */,
 				24D98B7B1BD61FC200EE79EA /* iShareNotes.xcdatamodeld */,
 				24D98B6F1BD61FC200EE79EA /* Supporting Files */,
@@ -141,6 +151,35 @@
 				24D98B991BD61FC200EE79EA /* Info.plist */,
 			);
 			path = iShareNotesUITests;
+			sourceTree = "<group>";
+		};
+		24D98BAA1BD6213C00EE79EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24D98BA91BD6213C00EE79EA /* ShareNotesData.plist */,
+			);
+			name = Resources;
+			path = ../../Notes/iShareNotes/iShareNotes;
+			sourceTree = "<group>";
+		};
+		24D98BAF1BD6213C00EE79EA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				24D98BAB1BD6213C00EE79EA /* FeedsViewController.h */,
+				24D98BAC1BD6213C00EE79EA /* FeedsViewController.m */,
+				24D98BAD1BD6213C00EE79EA /* FeedsTableViewCell.h */,
+				24D98BAE1BD6213C00EE79EA /* FeedsTableViewCell.m */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		24D98BB01BD6213C00EE79EA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24D98BAF1BD6213C00EE79EA /* Feed */,
+			);
+			name = ViewController;
+			path = ../../Notes/iShareNotes/iShareNotes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +285,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D98BB11BD6213D00EE79EA /* ShareNotesData.plist in Resources */,
+				24D98BA61BD620F200EE79EA /* Main.storyboard in Resources */,
+				24D98BA81BD6210400EE79EA /* Assets.xcassets in Resources */,
 				24D98B821BD61FC200EE79EA /* LaunchScreen.storyboard in Resources */,
-				24D98B7F1BD61FC200EE79EA /* Assets.xcassets in Resources */,
-				24D98B7A1BD61FC200EE79EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +316,9 @@
 				24D98B771BD61FC200EE79EA /* ViewController.m in Sources */,
 				24D98B7D1BD61FC200EE79EA /* iShareNotes.xcdatamodeld in Sources */,
 				24D98B741BD61FC200EE79EA /* AppDelegate.m in Sources */,
+				24D98BB21BD6213D00EE79EA /* FeedsViewController.m in Sources */,
 				24D98B711BD61FC200EE79EA /* main.m in Sources */,
+				24D98BB31BD6213D00EE79EA /* FeedsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,14 +354,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		24D98B781BD61FC200EE79EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24D98B791BD61FC200EE79EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24D98B801BD61FC200EE79EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
