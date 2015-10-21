@@ -69,6 +69,7 @@
     NSDictionary *notesDict = [classesArray objectAtIndex:indexPath.section];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kClassesTableViewCellIdentifier];
     cell.textLabel.text = notesDict[@"courseTitle"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

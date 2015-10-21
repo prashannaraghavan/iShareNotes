@@ -8,6 +8,7 @@
 
 #import "NotesViewController.h"
 #import "NotesForClassesTableViewCell.h"
+#import "ClassesHeaderTableViewCell.h"
 #import "Utils.h"
 
 #define kNotesCellIdentifier @"NotesTableViewCell"
@@ -74,8 +75,9 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     NSDictionary *notesDict = [notesArray objectAtIndex:section];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesCellIdentifier];
-    cell.textLabel.text = notesDict[@"courseTitle"];
+    ClassesHeaderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesCellIdentifier];
+    cell.headerTitle.text = notesDict[@"courseTitle"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell.contentView;
 }
 
@@ -84,6 +86,7 @@
     NSDictionary *feed = [feedArray objectAtIndex:indexPath.row];
     NotesForClassesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNotesForClassCellIdentifier];
     cell.noteLabel.text = feed[@"feedText"];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 

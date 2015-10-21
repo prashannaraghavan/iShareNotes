@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +15,61 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZ6-Ad-rtl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iShareNotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPI-lT-hfq">
+                                        <rect key="frame" x="225" y="253" width="150" height="30"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="3yc-co-dka"/>
+                                            <constraint firstAttribute="height" constant="30" id="XO6-eC-Li1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="beta" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmT-8p-nbx">
+                                        <rect key="frame" x="340" y="282" width="35" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Copyrights 2015, Prashanna Raghavan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alv-Zk-iWv">
+                                        <rect key="frame" x="153" y="465" width="295" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hmT-8p-nbx" firstAttribute="trailing" secondItem="CPI-lT-hfq" secondAttribute="trailing" id="VZe-ZP-9Er"/>
+                                    <constraint firstAttribute="bottom" secondItem="alv-Zk-iWv" secondAttribute="bottom" constant="50" id="hXD-8G-Sac"/>
+                                    <constraint firstItem="hmT-8p-nbx" firstAttribute="top" secondItem="CPI-lT-hfq" secondAttribute="bottom" constant="-1" id="j7b-i9-8Ra"/>
+                                    <constraint firstItem="CPI-lT-hfq" firstAttribute="centerY" secondItem="lZ6-Ad-rtl" secondAttribute="centerY" id="lSK-LE-vy0"/>
+                                    <constraint firstItem="alv-Zk-iWv" firstAttribute="centerX" secondItem="lZ6-Ad-rtl" secondAttribute="centerX" id="qOQ-AE-He7"/>
+                                    <constraint firstItem="CPI-lT-hfq" firstAttribute="centerX" secondItem="lZ6-Ad-rtl" secondAttribute="centerX" id="t10-EU-j8x"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lZ6-Ad-rtl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="94t-uh-IUg"/>
+                            <constraint firstAttribute="trailing" secondItem="lZ6-Ad-rtl" secondAttribute="trailing" id="lSD-9y-VJC"/>
+                            <constraint firstItem="lZ6-Ad-rtl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oK0-tT-eqU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="lZ6-Ad-rtl" secondAttribute="bottom" id="wF8-bE-sA9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="217" y="373"/>
         </scene>
     </scenes>
 </document>
